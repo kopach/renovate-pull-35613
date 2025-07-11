@@ -1,0 +1,18 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  dependencyDashboard: true,
+  //   packageRules: [
+  //     {
+  //       // group all node.js updates
+  //       groupName: 'node.js',
+  //       groupSlug: 'nodejs',
+  //       matchDepNames: [
+  //         '/(?:^|/)node(|js)$/', // node or nodejs or ends with "/node" or "/nodejs"
+  //         '!/^@nx//', // NX should be updated separately (with other NX packages)
+  //       ],
+  //     },
+  //   ],
+  prBodyDefinitions: {
+    Change: '{{#ifEq depType "action"}}[{{#if displayFrom}}{{{displayFrom}}}{{else}}{{{currentValue}}}{{/if}} -> {{#if displayTo}}{{{displayTo}}}{{else}}{{{newValue}}}{{/if}}]({{#if sourceUrl}}{{{sourceUrl}}}/compare/{{#if currentDigest}}{{{currentDigestShort}}}{{else}}{{{currentValue}}}{{/if}}...{{#if newDigest}}{{{newDigestShort}}}{{else}}{{{newValue}}}{{/if}}{{else}}{{#if depName}}https://github.com/{{replace "/" "%2F" depName}}/compare/{{#if currentDigest}}{{{currentDigestShort}}}{{else}}{{{currentValue}}}{{/if}}...{{#if newDigest}}{{{newDigestShort}}}{{else}}{{{newValue}}}{{/if}}{{/if}}{{/if}}){{/ifEq}}',
+  },
+}
