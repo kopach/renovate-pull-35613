@@ -1,0 +1,13 @@
+{
+  "name": "renovate/pull/35613",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@nx/node": "17.3.2",
+    "@types/node": "18.19.64"
+  },
+  "engines": {
+    "node": "22.13.1"
+  }
+}
