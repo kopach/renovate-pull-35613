@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@nx/node": "17.3.2",
-    "@types/node": "18.19.64"
+    "@types/node": "18.19.118"
   },
   "engines": {
     "node": "22.13.1"
