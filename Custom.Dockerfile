@@ -6,7 +6,7 @@ COPY package.json .
 
 RUN npm install
 
-FROM node:22.13.1-alpine as runner
+FROM node:24.7.0-alpine as runner
 
 WORKDIR /app
 
